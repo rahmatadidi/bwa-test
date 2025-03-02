@@ -1,0 +1,68 @@
+@import "tailwindcss";
+:root {
+  @apply bg-[#F5F5F5];
+}
+
+.btn {
+  @apply border-2 border-[#EAECEE] cursor-pointer rounded-4xl transition-all duration-300 active:scale-95;
+}
+
+.nav-item {
+  @apply relative text-lg font-medium transition-all duration-300 w-24;
+}
+
+.nav-item::after {
+  content: "";
+  @apply absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300;
+}
+
+.nav-item:hover {
+  @apply font-bold;
+}
+
+.nav-item:hover::after {
+  @apply w-[75%];
+}
+
+.main {
+  @apply flex bg-[#F5F5F5];
+}
+.input-container {
+  @apply flex flex-col mb-4;
+}
+
+.input-label {
+  @apply text-sm font-semibold mb-1;
+}
+
+.input-group {
+  @apply flex items-center border-2 text-base font-bold border-gray-300 rounded-4xl px-3 py-2 gap-4 mt-2
+  focus-within:border-black transition-all;
+}
+
+.input-icon {
+  @apply text-gray-400 text-lg;
+}
+
+.input-field {
+  @apply flex-1 border-none focus:outline-none bg-transparent text-gray-700 placeholder-gray-400;
+}
+
+.form-section {
+  @apply bg-white w-[510px] h-[747px] m-auto rounded-2xl p-5;
+}
+.image-upload {
+  @apply relative w-24 h-24 rounded-full border border-gray-300 cursor-pointer flex items-center justify-center bg-white;
+}
+
+.image-preview {
+  @apply w-full h-full object-cover rounded-full absolute;
+}
+
+.overlay {
+  @apply absolute inset-0 flex items-center justify-center text-gray-500 text-sm font-medium;
+}
+
+.file-input {
+  @apply absolute inset-0 opacity-0 cursor-pointer;
+}

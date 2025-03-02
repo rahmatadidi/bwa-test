@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Obito</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../assets/logo-obito.svg"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link
+      href="./output.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar section -->
+    <nav class="px-20 py-5 sticky top-0 z-50 bg-white">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-12">
+          <div class="flex gap-1.5">
+            <img
+              class="h-8 w-8"
+              src="../assets/logo-obito.svg"
+              alt="logo"
+            />
+            <h1 class="text-2xl font-extrabold">Obito</h1>
+          </div>
+          <div class="flex items-center gap-10">
+            <a
+              href="#"
+              class="nav-item"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="nav-item"
+              >Pricing</a
+            >
+            <a
+              href="#"
+              class="nav-item"
+              >Features</a
+            >
+            <a
+              href="#"
+              class="nav-item"
+              >Testimonials</a
+            >
+          </div>
+        </div>
+
+        <div class="flex items-center gap-5">
+          <i class="fa-regular cursor-pointer fa-message"></i>
+          <div class="border-r-2 border-[#EAECEE] h-12"></div>
+          <div class="flex gap-3">
+            <button
+              class="font-bold bg-white btn hover:bg-[#EAECEE] w-28 h-12 py-3 px-5"
+            >
+              Sign Up
+            </button>
+            <button
+              class="font-bold btn bg-[#2F6A62] text-white hover:bg-[#084d43] w-36"
+            >
+              My Account
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Main Content -->
+    <div class="main h-screen flex items-center justify-between">
+      <!-- Form Section -->
+      <div class="form-section">
+        <h1 class="text-2xl font-bold">Upgrade Your Skill</h1>
+        <div class="flex items-center gap-5">
+          <label class="image-upload mt-4 mb-4">
+            <img
+              id="preview"
+              class="image-preview hidden"
+            />
+            <div
+              class="overlay"
+              id="overlay"
+            >
+              Add Photo
+            </div>
+            <input
+              type="file"
+              accept="image/*"
+              class="file-input"
+              id="fileInput"
+            />
+          </label>
+          <button
+            id="deleteButton"
+            class="px-3 py-1 h-8 bg-[#FFE3E1] text-[#EF372B] font-bold cursor-pointer rounded-full hidden"
+          >
+            Delete Photo
+          </button>
+        </div>
+        <div id="form-section"></div>
+        <button
+          class="font-bold btn bg-[#2F6A62] text-white hover:bg-[#084d43] mt-4 w-[470px] h-14"
+        >
+          Create My Account
+        </button>
+      </div>
+      <!-- Image -->
+      <img
+        src="../assets/image.png"
+        alt="image"
+      />
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
